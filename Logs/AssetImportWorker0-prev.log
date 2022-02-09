@@ -1,0 +1,987 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Enterprise; OS build 19043.1466; Version 2009; 64bit' Language: 'en' Physical Memory: 32637 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Portfolio/Shooting Range VR/Git/Shooting Range VR
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50451
+Successfully changed project path to: D:/Portfolio/Shooting Range VR/Git/Shooting Range VR
+D:/Portfolio/Shooting Range VR/Git/Shooting Range VR
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 34.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Portfolio/Shooting Range VR/Git/Shooting Range VR/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1be1)
+    Vendor:   
+    VRAM:     8081 MB
+    Driver:   30.0.15.1123
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002087 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 29.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.363 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1364ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (531ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (176ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (174ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (30ms)
+				BeforeProcessingInitializeOnLoad (18ms)
+				ProcessInitializeOnLoadAttributes (90ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005039 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.696 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1697ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1409ms)
+			LoadAssemblies (166ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (627ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (163ms)
+				ProcessInitializeOnLoadAttributes (433ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.8 MB.
+System memory in use after: 64.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1832.
+Total: 5.388300 ms (FindLiveObjects: 0.254700 ms CreateObjectMapping: 0.106900 ms MarkObjects: 4.931000 ms  DeleteObjects: 0.093400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85059f4f9e1a832ed95adaa0d25c5c4c') in 0.025338 seconds 
+  Import took 0.027956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.368545 seconds.
+  path: Assets/Scenes/TestScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TestScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7413b4377e59d6f4dee44f718c0cd3b4') in 0.022519 seconds 
+  Import took 0.027024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.267060 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.015644 seconds 
+  Import took 0.018201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.303767 seconds.
+  path: Assets/Guns
+  artifactKey: Guid(c34cf024b529c8645aa6f6a11cac00aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns using Guid(c34cf024b529c8645aa6f6a11cac00aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39abf4df4f2dc945367a6f611cec4479') in 0.013001 seconds 
+  Import took 0.015417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.763137 seconds.
+  path: Assets/Guns/M1911-A1
+  artifactKey: Guid(24e6472ff33b37d47bc2b7d5294d364f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1 using Guid(24e6472ff33b37d47bc2b7d5294d364f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3692b5b1a205e3c2b2910d7c96c705e5') in 0.014786 seconds 
+  Import took 0.017334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.436746 seconds.
+  path: Assets/Guns/M1911-A1/M1911-A1Model.fbx
+  artifactKey: Guid(5108e33c9fd86c14db37ff24d03783b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/M1911-A1Model.fbx using Guid(5108e33c9fd86c14db37ff24d03783b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7dbbed7c015cc26a7d0b3383866816') in 1.215844 seconds 
+  Import took 1.219761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.342422 seconds.
+  path: Assets/Guns/M1911-A1/M1911-A1Model.fbx
+  artifactKey: Guid(5108e33c9fd86c14db37ff24d03783b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/M1911-A1Model.fbx using Guid(5108e33c9fd86c14db37ff24d03783b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560b7415a3db37f63ad2093c672d20bf') in 0.272070 seconds 
+  Import took 0.275295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.210596 seconds.
+  path: Assets/Guns/M1911-A1/M1911-A1Model.fbx
+  artifactKey: Guid(5108e33c9fd86c14db37ff24d03783b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/M1911-A1Model.fbx using Guid(5108e33c9fd86c14db37ff24d03783b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c01e85b6e699184faa279fb6c71e8ba') in 0.172581 seconds 
+  Import took 0.176130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.647258 seconds.
+  path: Assets/Guns/M1911-A1/Textures
+  artifactKey: Guid(fceaa9b5a089b374d93072b3cd10ea7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures using Guid(fceaa9b5a089b374d93072b3cd10ea7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a399500a0f36f5acae5fb0a7fa326a') in 0.016639 seconds 
+  Import took 0.019980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068373 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Barrel_2D_View.png
+  artifactKey: Guid(6e2f9f61f59d0a9448c10ea47917bd77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Barrel_2D_View.png using Guid(6e2f9f61f59d0a9448c10ea47917bd77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817ed86204ea1e50ac37fcc971d90b3b') in 0.049366 seconds 
+  Import took 0.052834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000483 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 8.png
+  artifactKey: Guid(c2ec33e782bf69e4995a44edc5b2313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 8.png using Guid(c2ec33e782bf69e4995a44edc5b2313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1339a2561dc1aab86c91022f5f12366e') in 0.036321 seconds 
+  Import took 0.039836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Frame_2D_View.png
+  artifactKey: Guid(925077762b1501e45a43dc9213f06008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Frame_2D_View.png using Guid(925077762b1501e45a43dc9213f06008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1971e0c020f6b4d1a6deadc8bbe8b83c') in 0.028757 seconds 
+  Import took 0.030847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 3.png
+  artifactKey: Guid(aacd77fef43f3fc408a05ea56895e62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 3.png using Guid(aacd77fef43f3fc408a05ea56895e62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45943820b4e63f3a8e5b4298df2f7a6') in 0.028266 seconds 
+  Import took 0.030363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 2.png
+  artifactKey: Guid(3a37f0649766ccf438711c3f1971af8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 2.png using Guid(3a37f0649766ccf438711c3f1971af8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e37657818d0dd3847cbd4d52ada28b6') in 0.027048 seconds 
+  Import took 0.029555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 1.png
+  artifactKey: Guid(600dc97273d3d5643a978d8b49779afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 1.png using Guid(600dc97273d3d5643a978d8b49779afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3ef0557e3792a5702da011bea26119') in 0.027306 seconds 
+  Import took 0.029440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 4.png
+  artifactKey: Guid(d2d7917984677de42bfe053271421cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 4.png using Guid(d2d7917984677de42bfe053271421cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc82fefb22edaf0a2396c933095cc19') in 0.025537 seconds 
+  Import took 0.027574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Guns/M1911-A1/Textures/HammerMaterial_2D_View.png
+  artifactKey: Guid(db10798a62e988a47a36814670724e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/HammerMaterial_2D_View.png using Guid(db10798a62e988a47a36814670724e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e206de546949f419200948affd17656') in 0.025302 seconds 
+  Import took 0.027581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View.png
+  artifactKey: Guid(46b2b7460858cf94aa6d774a42b95620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View.png using Guid(46b2b7460858cf94aa6d774a42b95620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572d71e9e051de31f3a0ef40091fb240') in 0.028357 seconds 
+  Import took 0.030498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 9.png
+  artifactKey: Guid(973abd142759370469f9b94ad9b8e63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 9.png using Guid(973abd142759370469f9b94ad9b8e63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff843805a850d583d9271d87a6c571fd') in 0.024563 seconds 
+  Import took 0.027189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Hammer_2D_View.png
+  artifactKey: Guid(09c28578f40b05f48810ae35ca530410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Hammer_2D_View.png using Guid(09c28578f40b05f48810ae35ca530410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438d68fb86208537a60a8d29308f1266') in 0.026441 seconds 
+  Import took 0.028579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 7.png
+  artifactKey: Guid(a1c26569f01b4cc48a83c4802528a9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 7.png using Guid(a1c26569f01b4cc48a83c4802528a9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935026ffd33f90fd624e59e3d6482ab2') in 0.027759 seconds 
+  Import took 0.030010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 5.png
+  artifactKey: Guid(04f9d17fd10349f419c747dfc27393fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 5.png using Guid(04f9d17fd10349f419c747dfc27393fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9203e10fe2e7f65ccb2ae1a875f54176') in 0.027487 seconds 
+  Import took 0.029545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Guns/M1911-A1/Textures/lambert1_2D_View 6.png
+  artifactKey: Guid(5592be29fa799a54d9ffee726987953e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/lambert1_2D_View 6.png using Guid(5592be29fa799a54d9ffee726987953e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd80416790d3f41efe2d41708dea4e2') in 0.027786 seconds 
+  Import took 0.030021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.622817 seconds.
+  path: Assets/Guns/M1911-A1/Materials/BarrelMaterial.mat
+  artifactKey: Guid(c3b0f3ff17cf02a4d84f5327af1964ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/BarrelMaterial.mat using Guid(c3b0f3ff17cf02a4d84f5327af1964ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7603822d510e0212d78214c8c71b81cf') in 0.041504 seconds 
+  Import took 0.044333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Guns/M1911-A1/Materials/LeftGripMaterial.mat
+  artifactKey: Guid(4356ed2a53f6a694687a4cbbc969ec6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/LeftGripMaterial.mat using Guid(4356ed2a53f6a694687a4cbbc969ec6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1117c595b025ca7ecb84c371d7ccf8a7') in 0.034857 seconds 
+  Import took 0.037321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Guns/M1911-A1/Materials/RightGripMaterial.mat
+  artifactKey: Guid(865b2089d622d164e9ffbf614675b510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/RightGripMaterial.mat using Guid(865b2089d622d164e9ffbf614675b510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e161a62133b94cbd984b98706cf761') in 0.030669 seconds 
+  Import took 0.032888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Guns/M1911-A1/Materials/SafetyLockMaterial.mat
+  artifactKey: Guid(6bf8db33545fd084390919258ad7d4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/SafetyLockMaterial.mat using Guid(6bf8db33545fd084390919258ad7d4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745abd9d5a6a553a32bddc460372158f') in 0.027984 seconds 
+  Import took 0.030287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Guns/M1911-A1/Materials/Frame1.mat
+  artifactKey: Guid(bee3bf6a4656a5d4ca055a699974f174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/Frame1.mat using Guid(bee3bf6a4656a5d4ca055a699974f174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0525abc776d6bb35716668e725f2c67d') in 0.029184 seconds 
+  Import took 0.031327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Guns/M1911-A1/Materials/MagazineMaterial.mat
+  artifactKey: Guid(78714382e0de42445bb78a4f5fbb5e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/MagazineMaterial.mat using Guid(78714382e0de42445bb78a4f5fbb5e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc9bb24453fb8a4db30e73bc4f8543b') in 0.028406 seconds 
+  Import took 0.030599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Guns/M1911-A1/Materials/GripSafetyMaterial.mat
+  artifactKey: Guid(21cf830581166c041b0072853ab0b0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/GripSafetyMaterial.mat using Guid(21cf830581166c041b0072853ab0b0aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b0de120eb7ce32d4fd106be9b14818') in 0.028761 seconds 
+  Import took 0.030848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Guns/M1911-A1/Materials/PlungerTubeMaterial.mat
+  artifactKey: Guid(ca908ec0c7ad6654397163794ff36204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/PlungerTubeMaterial.mat using Guid(ca908ec0c7ad6654397163794ff36204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36bc52b8ae41719025eb27b50518e787') in 0.029906 seconds 
+  Import took 0.032776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/Guns/M1911-A1/Materials/HammerMaterial.mat
+  artifactKey: Guid(a50dfe21f6a9b8746aebd23d709be3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/HammerMaterial.mat using Guid(a50dfe21f6a9b8746aebd23d709be3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d240beca3a9fa2c831327a3eba538e5') in 0.033383 seconds 
+  Import took 0.036137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Guns/M1911-A1/Materials/SliderStopMaterial.mat
+  artifactKey: Guid(9ed85545847f20a46bdb9104e0a2134d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/SliderStopMaterial.mat using Guid(9ed85545847f20a46bdb9104e0a2134d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef2727d4f324fb7acecb9f74e4c8050') in 0.027394 seconds 
+  Import took 0.029896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Guns/M1911-A1/Materials/SliderMaterial.mat
+  artifactKey: Guid(e4466cd487d79a94b9d65e6c249701e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/SliderMaterial.mat using Guid(e4466cd487d79a94b9d65e6c249701e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f36b394edce1683862be5158c85e03') in 0.028194 seconds 
+  Import took 0.030651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Guns/M1911-A1/Materials/TriggerMaterial.mat
+  artifactKey: Guid(9bcd9ca6d284a7a4ba55ab5319c5e4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/TriggerMaterial.mat using Guid(9bcd9ca6d284a7a4ba55ab5319c5e4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33e25d69b68e50414399070159dca16') in 0.027442 seconds 
+  Import took 0.030118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Guns/M1911-A1/Materials/HammerStrutMaterial.mat
+  artifactKey: Guid(913adf37b7cdbd14d86391745ac6e935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/HammerStrutMaterial.mat using Guid(913adf37b7cdbd14d86391745ac6e935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb0d4e5651b3c0be2868c75bbf77151') in 0.027976 seconds 
+  Import took 0.030684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Guns/M1911-A1/Materials/MagazineCatchMaterial.mat
+  artifactKey: Guid(f48f0cfa1dbc8f94596e856ebde1a394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Materials/MagazineCatchMaterial.mat using Guid(f48f0cfa1dbc8f94596e856ebde1a394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5fb616736a6d7cd669c33b053ec6588') in 0.029318 seconds 
+  Import took 0.031822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2027.399153 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Frame
+  artifactKey: Guid(372d52d8950d1de40a296d10560b9fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Frame using Guid(372d52d8950d1de40a296d10560b9fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3e14faf96e124b1242c1f344d14730') in 0.015098 seconds 
+  Import took 0.018223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 425.875733 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_AlbedoTransparency.png
+  artifactKey: Guid(affbfd9681e41104e8f7b416e6537fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_AlbedoTransparency.png using Guid(affbfd9681e41104e8f7b416e6537fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238c3c8b7ae0f7ba65f9b8659ea9f19a') in 0.033494 seconds 
+  Import took 0.037422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_MetallicSmoothness.png
+  artifactKey: Guid(639dc5d91728cba43bc85e91389b9ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_MetallicSmoothness.png using Guid(639dc5d91728cba43bc85e91389b9ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba901ada4526118c058f71f2e22a47a0') in 0.035339 seconds 
+  Import took 0.040373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001169 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_Normal.png
+  artifactKey: Guid(d96e097bd703f1043a62971d15dbb9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_Normal.png using Guid(d96e097bd703f1043a62971d15dbb9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c62a83e707815caf2e7f572c56bbde') in 0.032222 seconds 
+  Import took 0.034693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.206019 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_Normal.png
+  artifactKey: Guid(d96e097bd703f1043a62971d15dbb9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Frame/Frame_Frame_Normal.png using Guid(d96e097bd703f1043a62971d15dbb9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea15554736d9a7493303eeb89d5fc7c0') in 0.061027 seconds 
+  Import took 0.064453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 655.756364 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Barrel
+  artifactKey: Guid(ce06a73899c51284e9768b88576743f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Barrel using Guid(ce06a73899c51284e9768b88576743f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23cba2c2062356cfd668267b9b96a131') in 0.016881 seconds 
+  Import took 0.021058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.114294 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_AlbedoTransparency.png
+  artifactKey: Guid(cab6601348aacb3468ddb0cbb6a3f994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_AlbedoTransparency.png using Guid(cab6601348aacb3468ddb0cbb6a3f994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59f30cfefc0bbcfcc5ca564f7587d81') in 0.042433 seconds 
+  Import took 0.046567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_Normal.png
+  artifactKey: Guid(74560f7999402394dbe97960189875bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_Normal.png using Guid(74560f7999402394dbe97960189875bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3cd070f406ce40c5a759d42bfe2006') in 0.027599 seconds 
+  Import took 0.030619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_MetallicSmoothness.png
+  artifactKey: Guid(79b07cf5ca3807f43bf629447f90c38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_MetallicSmoothness.png using Guid(79b07cf5ca3807f43bf629447f90c38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2757943c6fe0f192ead5b7dcf615ac4e') in 0.031310 seconds 
+  Import took 0.035597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.142838 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_Normal.png
+  artifactKey: Guid(74560f7999402394dbe97960189875bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Barrel/Barrel_Barrel_Normal.png using Guid(74560f7999402394dbe97960189875bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f05b239c05cb5f63a2f26b5a29ae0d1') in 0.025339 seconds 
+  Import took 0.028503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.108657 seconds.
+  path: Assets/Guns/M1911-A1/Textures/GripSafety
+  artifactKey: Guid(8a018cf34a60ba54383541721b8c0935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/GripSafety using Guid(8a018cf34a60ba54383541721b8c0935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c54e5f481ad79162c2b3209427432c') in 0.017914 seconds 
+  Import took 0.020982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.057371 seconds.
+  path: Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(6257575c0836c3a40a356c2ab228d58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_AlbedoTransparency.png using Guid(6257575c0836c3a40a356c2ab228d58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b739fed608b80fd0b3a5c02165c555cd') in 0.037601 seconds 
+  Import took 0.040570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(20020c5ac6dd3cd4895eb6f024f7f856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_MetallicSmoothness.png using Guid(20020c5ac6dd3cd4895eb6f024f7f856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb4d351a44957e544e571533579d520') in 0.030488 seconds 
+  Import took 0.033302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_Normal.png
+  artifactKey: Guid(b03ba519ee65fb74d9bb41e30d06b8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_Normal.png using Guid(b03ba519ee65fb74d9bb41e30d06b8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5b6036236a6d8581153e82b6a74cd1') in 0.049721 seconds 
+  Import took 0.051823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.952370 seconds.
+  path: Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_Normal.png
+  artifactKey: Guid(b03ba519ee65fb74d9bb41e30d06b8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/GripSafety/GripSafety_lambert1_Normal.png using Guid(b03ba519ee65fb74d9bb41e30d06b8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a331bd21a4d0851d0b92fab4d88bd3') in 0.027075 seconds 
+  Import took 0.029596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.850915 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Hammer
+  artifactKey: Guid(0d6de51541a9e544ea28007e3cc4efb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Hammer using Guid(0d6de51541a9e544ea28007e3cc4efb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337d88e20f30cf97c5e9a34bd9b129df') in 0.015968 seconds 
+  Import took 0.021412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.663048 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_AlbedoTransparency.png
+  artifactKey: Guid(9f31aab1c256b2b4889f52f809264070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_AlbedoTransparency.png using Guid(9f31aab1c256b2b4889f52f809264070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adaad1ae30b4a24378106dd0195e4c86') in 0.033171 seconds 
+  Import took 0.036958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_Normal.png
+  artifactKey: Guid(1405ea32204567e4a8533e30676b4464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_Normal.png using Guid(1405ea32204567e4a8533e30676b4464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c9bdd049e5a81e5873b05297f4c894') in 0.025632 seconds 
+  Import took 0.028558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_MetallicSmoothness.png
+  artifactKey: Guid(626673ffc478c6a46a5d36fa31642e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_MetallicSmoothness.png using Guid(626673ffc478c6a46a5d36fa31642e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8854c91c3f1529b3e542956d897a894') in 0.025988 seconds 
+  Import took 0.028429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.113437 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_Normal.png
+  artifactKey: Guid(1405ea32204567e4a8533e30676b4464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Hammer/Hammer_Hammer_Normal.png using Guid(1405ea32204567e4a8533e30676b4464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a72dd2586d44400d20e7c0887e1f856') in 0.027037 seconds 
+  Import took 0.030332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.678920 seconds.
+  path: Assets/Guns/M1911-A1/Textures/HammerStrut
+  artifactKey: Guid(12420cfec41185946a4ca50556334487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/HammerStrut using Guid(12420cfec41185946a4ca50556334487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a298cb43b4bab6b537da8fe785d64e') in 0.014255 seconds 
+  Import took 0.017842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.709609 seconds.
+  path: Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_AlbedoTransparency.png
+  artifactKey: Guid(d26266b492a63714d9d93e11465fbad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_AlbedoTransparency.png using Guid(d26266b492a63714d9d93e11465fbad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff9b79c7212a5ee40593ef580e201d39') in 0.034441 seconds 
+  Import took 0.037467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_MetallicSmoothness.png
+  artifactKey: Guid(1b4c218df0725ef49b1e26ef12edb20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_MetallicSmoothness.png using Guid(1b4c218df0725ef49b1e26ef12edb20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9ebca74de4328769796c1ef56e85c3') in 0.029719 seconds 
+  Import took 0.032824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_Normal.png
+  artifactKey: Guid(7e818dd7039567d4695eaa569aa00495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_Normal.png using Guid(7e818dd7039567d4695eaa569aa00495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b561deb940ef0c0745169af555e3df61') in 0.028186 seconds 
+  Import took 0.032537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.254930 seconds.
+  path: Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_Normal.png
+  artifactKey: Guid(7e818dd7039567d4695eaa569aa00495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/HammerStrut/HammerStrut_HammerMaterial_Normal.png using Guid(7e818dd7039567d4695eaa569aa00495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53467fbbcf4b0122273db1e4d6af120') in 0.026772 seconds 
+  Import took 0.029692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.841299 seconds.
+  path: Assets/Guns/M1911-A1/Textures/LeftGrip
+  artifactKey: Guid(93e44102eaf1203468f785d1c83f8c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/LeftGrip using Guid(93e44102eaf1203468f785d1c83f8c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ab7d3ba046fff99377e007d4149b1f') in 0.012974 seconds 
+  Import took 0.017003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.772032 seconds.
+  path: Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(db49ee2da435e4f49a9a2a58f399c00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_AlbedoTransparency.png using Guid(db49ee2da435e4f49a9a2a58f399c00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6783c1e4c0defd4a73c370da4247ae6') in 0.029697 seconds 
+  Import took 0.034338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000479 seconds.
+  path: Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(e716dfccbbf326747be7460f854cddc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_MetallicSmoothness.png using Guid(e716dfccbbf326747be7460f854cddc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb864344595b13ed365c357a2423b15f') in 0.026502 seconds 
+  Import took 0.029156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_Normal.png
+  artifactKey: Guid(4a45237a877511048b5be53a202e0de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_Normal.png using Guid(4a45237a877511048b5be53a202e0de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfafe7e9f0cada767573b87809ebfb70') in 0.030392 seconds 
+  Import took 0.034300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.439435 seconds.
+  path: Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_Normal.png
+  artifactKey: Guid(4a45237a877511048b5be53a202e0de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/LeftGrip/LeftGrip_lambert1_Normal.png using Guid(4a45237a877511048b5be53a202e0de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db98b4af824749cd01709baddabc836') in 0.026228 seconds 
+  Import took 0.029184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.317384 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Magazine
+  artifactKey: Guid(f3cb5249eb0ae9c419e7a2fe54390a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Magazine using Guid(f3cb5249eb0ae9c419e7a2fe54390a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76e7e0fb7896c16af85cb5d2e243d27') in 0.017933 seconds 
+  Import took 0.021348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.522471 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(bd381cb1d40d9c6439b5982d25937d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_AlbedoTransparency.png using Guid(bd381cb1d40d9c6439b5982d25937d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93ac0858995e70b0634931d0a24644c') in 0.031967 seconds 
+  Import took 0.034881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(caa66dbcace6da34583b8f550fceff2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_MetallicSmoothness.png using Guid(caa66dbcace6da34583b8f550fceff2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa28f484b9a3d0ad98bb8c25fb2e45b') in 0.031109 seconds 
+  Import took 0.033285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_Normal.png
+  artifactKey: Guid(03f8127489e5bd645b80fdb2c263b9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_Normal.png using Guid(03f8127489e5bd645b80fdb2c263b9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0688e0cbfa6eb79ffffbba08a8c6731') in 0.030565 seconds 
+  Import took 0.033118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.452576 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_Normal.png
+  artifactKey: Guid(03f8127489e5bd645b80fdb2c263b9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Magazine/Magazine_lambert1_Normal.png using Guid(03f8127489e5bd645b80fdb2c263b9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e24f0937e7c2883d59de51f1047f55') in 0.028303 seconds 
+  Import took 0.031617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.577474 seconds.
+  path: Assets/Guns/M1911-A1/Textures/MagazineCatch
+  artifactKey: Guid(ca73d6b3fb4954043a5b737870095ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/MagazineCatch using Guid(ca73d6b3fb4954043a5b737870095ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb8726b7ab31c10244ac06858d5ae79') in 0.013857 seconds 
+  Import took 0.017059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.150812 seconds.
+  path: Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(47a5faa66c906cb40bcae5e200d92a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_AlbedoTransparency.png using Guid(47a5faa66c906cb40bcae5e200d92a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed896a92db56f4d78e9dd295c181a001') in 0.027494 seconds 
+  Import took 0.031198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(d53f6d083841b23459b64fe4bbb7705e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_MetallicSmoothness.png using Guid(d53f6d083841b23459b64fe4bbb7705e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4723738967926b362ccf123f253d7f33') in 0.029665 seconds 
+  Import took 0.032448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_Normal.png
+  artifactKey: Guid(89b37ca2804c6e8458fd46eeb77240a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_Normal.png using Guid(89b37ca2804c6e8458fd46eeb77240a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8cb597095f91c42e5e41081d2c3e9e') in 0.030141 seconds 
+  Import took 0.032385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.164023 seconds.
+  path: Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_Normal.png
+  artifactKey: Guid(89b37ca2804c6e8458fd46eeb77240a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/MagazineCatch/MagazineCatch_lambert1_Normal.png using Guid(89b37ca2804c6e8458fd46eeb77240a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '769f8a5742af1be9df12cce0b0322ce1') in 0.027123 seconds 
+  Import took 0.029863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.615791 seconds.
+  path: Assets/Guns/M1911-A1/Textures/PlungerTube
+  artifactKey: Guid(b9c3bbf606a2ee74798805a0cea78c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/PlungerTube using Guid(b9c3bbf606a2ee74798805a0cea78c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b76e3467ea591d630ed5faeade83db') in 0.024047 seconds 
+  Import took 0.028354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.245639 seconds.
+  path: Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(74168942314990843beff299f72fce62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_AlbedoTransparency.png using Guid(74168942314990843beff299f72fce62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c833b6eeacfbc875488f130cbdd926a') in 0.033912 seconds 
+  Import took 0.037033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_Normal.png
+  artifactKey: Guid(7f85f4c970d79e341a2be8b9ea1872b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_Normal.png using Guid(7f85f4c970d79e341a2be8b9ea1872b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c93575287e934290a65014bacece498') in 0.027453 seconds 
+  Import took 0.029685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(06a32283d310d8a4a8081e1802536bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_MetallicSmoothness.png using Guid(06a32283d310d8a4a8081e1802536bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e123dc0f49c95a178ed29f38dc5202') in 0.022018 seconds 
+  Import took 0.024230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.082317 seconds.
+  path: Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_Normal.png
+  artifactKey: Guid(7f85f4c970d79e341a2be8b9ea1872b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/PlungerTube/PlungerTube_lambert1_Normal.png using Guid(7f85f4c970d79e341a2be8b9ea1872b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78686f2f2bf85ebbe533c1c7c5833f55') in 0.028734 seconds 
+  Import took 0.032255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.137306 seconds.
+  path: Assets/Guns/M1911-A1/Textures/RightGrip
+  artifactKey: Guid(940c357dfed20ba44adee4d86c35d9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/RightGrip using Guid(940c357dfed20ba44adee4d86c35d9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd52f8156539f49e704ac27c2de430d56') in 0.014664 seconds 
+  Import took 0.017878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.035829 seconds.
+  path: Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(bc4fdc71bdbd64740897a205362b6d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_AlbedoTransparency.png using Guid(bc4fdc71bdbd64740897a205362b6d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eae5b0b1dece6b20e4376e509be9ce7') in 0.034065 seconds 
+  Import took 0.036696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_Normal.png
+  artifactKey: Guid(050ef17d152b4f44b81ea0ea5a141084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_Normal.png using Guid(050ef17d152b4f44b81ea0ea5a141084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926bb024baa2d9755db8724898763f88') in 0.027205 seconds 
+  Import took 0.029303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(0a7a38b2280f3154db1c756b7c69b52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_MetallicSmoothness.png using Guid(0a7a38b2280f3154db1c756b7c69b52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ec9f7afb06948948694688a301035b') in 0.023326 seconds 
+  Import took 0.025839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.131528 seconds.
+  path: Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_Normal.png
+  artifactKey: Guid(050ef17d152b4f44b81ea0ea5a141084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/RightGrip/RightGrip_lambert1_Normal.png using Guid(050ef17d152b4f44b81ea0ea5a141084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d526da2da5c04724a717ba4ca0417b') in 0.033216 seconds 
+  Import took 0.036254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.195863 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SafetyLock
+  artifactKey: Guid(88b07c22d69c4334da49ff834ccc75e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SafetyLock using Guid(88b07c22d69c4334da49ff834ccc75e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b89c447cddcef340c78adfeb11dad7') in 0.013463 seconds 
+  Import took 0.016687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.158659 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(901af246b914580458bef143a4367d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_AlbedoTransparency.png using Guid(901af246b914580458bef143a4367d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd28fb60683a01e8308beb231f760b1') in 0.032838 seconds 
+  Import took 0.036589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_Normal.png
+  artifactKey: Guid(5c7ec74129bd79b4f917a5f299e44a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_Normal.png using Guid(5c7ec74129bd79b4f917a5f299e44a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fba0355e0872c6ab56e0ef4b185cfe8') in 0.030065 seconds 
+  Import took 0.033013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(df79b440ab9b3e744b08425780fc5ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_MetallicSmoothness.png using Guid(df79b440ab9b3e744b08425780fc5ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e70c00a285b7571a104fbb977086592') in 0.027200 seconds 
+  Import took 0.029877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.032195 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_Normal.png
+  artifactKey: Guid(5c7ec74129bd79b4f917a5f299e44a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SafetyLock/SafetyLock_lambert1_Normal.png using Guid(5c7ec74129bd79b4f917a5f299e44a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca1f18d0627a1e88abe5d7aebf158b6') in 0.027157 seconds 
+  Import took 0.030059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.053053 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Slider
+  artifactKey: Guid(57a35165f554f15458d4da707050d799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Slider using Guid(57a35165f554f15458d4da707050d799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6582b312294868237ac7043b48fe7bdd') in 0.014775 seconds 
+  Import took 0.017678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.061257 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(50875db9bdd659d429cc8b8b64e64f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_AlbedoTransparency.png using Guid(50875db9bdd659d429cc8b8b64e64f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d67a38f813711272549eb19f2ef448') in 0.026748 seconds 
+  Import took 0.031666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000525 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(86e812941080b4e42843e257c7743864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_MetallicSmoothness.png using Guid(86e812941080b4e42843e257c7743864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206e85a00765f6a0eb0d3465a9da4aef') in 0.028244 seconds 
+  Import took 0.031598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_Normal.png
+  artifactKey: Guid(efda2187644e3044aae64be23041876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_Normal.png using Guid(efda2187644e3044aae64be23041876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25c9472ddab83ba6e5e403a18175f95') in 0.024581 seconds 
+  Import took 0.027689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.936479 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_Normal.png
+  artifactKey: Guid(efda2187644e3044aae64be23041876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Slider/Slider_lambert1_Normal.png using Guid(efda2187644e3044aae64be23041876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b6f6d2aa3e807faa510ab06af6e66f') in 0.031278 seconds 
+  Import took 0.034736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.679453 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SlideStop
+  artifactKey: Guid(0083a9161c37b034e8109104534e75fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SlideStop using Guid(0083a9161c37b034e8109104534e75fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212428cf724edd611f972722b64887d3') in 0.013154 seconds 
+  Import took 0.016734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.852827 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(c5f4e32f64c18264f8feaabf4721e359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_AlbedoTransparency.png using Guid(c5f4e32f64c18264f8feaabf4721e359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec46e7523a6dbadb2a087e90821f9063') in 0.035401 seconds 
+  Import took 0.038745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(d06a91d5f046e3d49a577583ceab00a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_MetallicSmoothness.png using Guid(d06a91d5f046e3d49a577583ceab00a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4886edc1a17587878cebb637def43d') in 0.030983 seconds 
+  Import took 0.033788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_Normal.png
+  artifactKey: Guid(b81c26a5d9cc659468d5b5630334ce4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_Normal.png using Guid(b81c26a5d9cc659468d5b5630334ce4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9929399ab2e18a8059c98ba62d7f2363') in 0.041705 seconds 
+  Import took 0.044057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.360572 seconds.
+  path: Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_Normal.png
+  artifactKey: Guid(b81c26a5d9cc659468d5b5630334ce4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/SlideStop/SlideStop_lambert1_Normal.png using Guid(b81c26a5d9cc659468d5b5630334ce4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd14ab3072bdc914e229ab392514928d3') in 0.031419 seconds 
+  Import took 0.034916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.385699 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Trigger
+  artifactKey: Guid(4f810f78443c4964a863031ce4ec6810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Trigger using Guid(4f810f78443c4964a863031ce4ec6810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187be722e04411b2999328feeaace016') in 0.016971 seconds 
+  Import took 0.020442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.879937 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_AlbedoTransparency.png
+  artifactKey: Guid(14f4a9ed7706b554f908b3bc85cc20bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_AlbedoTransparency.png using Guid(14f4a9ed7706b554f908b3bc85cc20bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9838c1342bfc0018072f2e5c24b9f691') in 0.042416 seconds 
+  Import took 0.045361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_MetallicSmoothness.png
+  artifactKey: Guid(bfe46cad8e4c74d4b8b9bff4bf3a6b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_MetallicSmoothness.png using Guid(bfe46cad8e4c74d4b8b9bff4bf3a6b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b87a58e9154392a136b56b07faf5b5') in 0.036948 seconds 
+  Import took 0.039568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_Normal.png
+  artifactKey: Guid(b626e522b7a00fc40bab5e513e4eadd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_Normal.png using Guid(b626e522b7a00fc40bab5e513e4eadd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4c8d0bca3dbb8c14d09b72c43b05e9') in 0.033567 seconds 
+  Import took 0.035961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.259031 seconds.
+  path: Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_Normal.png
+  artifactKey: Guid(b626e522b7a00fc40bab5e513e4eadd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Guns/M1911-A1/Textures/Trigger/Trigger_lambert1_Normal.png using Guid(b626e522b7a00fc40bab5e513e4eadd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8913c9e6c5800112bbcbc5f702326791') in 0.028438 seconds 
+  Import took 0.032561 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
