@@ -53,9 +53,11 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ControllerInputs.cs" />
     <Compile Include="Assets\Scripts\GunInteraction.cs" />
+    <Compile Include="Assets\Scripts\RightHandControllerInputs.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
+    <Compile Include="Assets\Scripts\ChangeColourInteractableObjects.cs" />
+    <Compile Include="Assets\Scripts\LeftHandControllerInputs.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

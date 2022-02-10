@@ -10,7 +10,7 @@ public class GunInteraction : MonoBehaviour
     Vector3 rotation;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         
     }

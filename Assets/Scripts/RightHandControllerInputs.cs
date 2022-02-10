@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControllerInputs : MonoBehaviour
+public class RightHandControllerInputs : MonoBehaviour
 {
-    [SerializeField] bool rightHand;
-
     MeshFilter mesh;
 
     Rigidbody rb;
 
-    [SerializeField] LayerMask interactableObjects;
+    [SerializeField] LayerMask interactableObjectLayer;
     [SerializeField] float rayMaxDistance;
 
     bool armed;
-    GameObject gun;
+    GameObject interactableObject;
 
     // Start is called before the first frame update
     void Start()
@@ -24,32 +22,28 @@ public class ControllerInputs : MonoBehaviour
 
     private void Update()
     {
-        if(armed)
+        if (armed)
         {
             handleGun();
+        }
+        else
+        {
+            checkObjects();
         }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        GetHandedControllerComponents(rightHand);
+        GetHandedControllerComponents();
     }
 
-    void GetHandedControllerComponents(bool hand)
+    void GetHandedControllerComponents()
     {
         List<UnityEngine.XR.InputDevice> HandedControllers;
         UnityEngine.XR.InputDeviceCharacteristics HandedDesiredCharacteristics;
-        if (hand)
-        {
-            HandedControllers = new List<UnityEngine.XR.InputDevice>();
-            HandedDesiredCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller;
-        }
-        else
-        {
-            HandedControllers = new List<UnityEngine.XR.InputDevice>();
-            HandedDesiredCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Left | UnityEngine.XR.InputDeviceCharacteristics.Controller;
-        }
+        HandedControllers = new List<UnityEngine.XR.InputDevice>();
+        HandedDesiredCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller;
         Controller(HandedControllers, HandedDesiredCharacteristics);
     }
 
@@ -76,20 +70,12 @@ public class ControllerInputs : MonoBehaviour
             bool triggerValue;
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
             {
-                if (!armed)
+                if (interactableObject != null)
                 {
-                    RaycastHit hit;
-                    // Does the ray intersect any objects excluding the player layer
-                    if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayMaxDistance, interactableObjects))
-                    {
-                        if (hit.transform.gameObject.tag == "Gun")
-                        {
-                            gun = hit.transform.gameObject;
-                            armed = true;
-                            mesh.mesh = null;
-                            transform.GetChild(0).gameObject.SetActive(false);
-                        }
-                    }
+                    armed = true;
+                    mesh.mesh = null;
+                    transform.GetChild(0).gameObject.SetActive(false);
+                    changeColour(Color.white);
                 }
                 else
                 {
@@ -99,9 +85,40 @@ public class ControllerInputs : MonoBehaviour
         }
     }
 
+    void checkObjects()
+    {
+        RaycastHit hit;
+        // Does the ray intersect any objects excluding the player layer
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayMaxDistance, interactableObjectLayer))
+        {
+            if(interactableObject == null)
+            {
+                interactableObject = hit.transform.gameObject;
+            }
+
+            if (interactableObject != hit.transform.gameObject)
+            {
+                changeColour(Color.white);
+                interactableObject = hit.transform.gameObject;
+            }
+
+            changeColour(Color.yellow);
+        }
+        else if(interactableObject != null)
+        {
+            changeColour(Color.white);
+        }
+    }
+
+    void changeColour(Color color)
+    {
+        ChangeColourInteractableObjects hitObject = interactableObject.GetComponent<ChangeColourInteractableObjects>();
+        hitObject.changeColour(color);
+    }
+
     void handleGun()
     {
-        GunInteraction hitObject = gun.GetComponent<GunInteraction>();
+        GunInteraction hitObject = interactableObject.GetComponent<GunInteraction>();
         hitObject.HandValues(transform.position, transform.localRotation.eulerAngles);
     }
 }
