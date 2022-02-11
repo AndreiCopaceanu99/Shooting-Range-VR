@@ -66,7 +66,18 @@ public class LeftHandControllerInputs : MonoBehaviour
                 {
                     mesh.mesh = null;
                     transform.GetChild(0).gameObject.SetActive(false);
-                    //changeColour(Color.white);
+                    if (interactableObject.tag == "Components")
+                    {
+                        ComponentsInteractions component = interactableObject.GetComponent<ComponentsInteractions>();
+                        component.Interact(transform.localPosition);
+                    }
+                }
+            }
+            else
+            {
+                if (interactableObject != null)
+                {
+                    interactableObject.GetComponent<ComponentsInteractions>().isInteracting = triggerValue;
                 }
             }
         }
@@ -82,13 +93,11 @@ public class LeftHandControllerInputs : MonoBehaviour
             {
                 interactableObject = hit.transform.gameObject;
             }
-
             if (interactableObject != hit.transform.gameObject)
             {
                 changeColour(Color.white);
                 interactableObject = hit.transform.gameObject;
             }
-            Debug.Log("component");
             changeColour(Color.yellow);
         }
         else if (interactableObject != null)

@@ -77,10 +77,6 @@ public class RightHandControllerInputs : MonoBehaviour
                     transform.GetChild(0).gameObject.SetActive(false);
                     changeColour(Color.white);
                 }
-                else
-                {
-
-                }
             }
         }
     }

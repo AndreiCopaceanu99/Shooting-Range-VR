@@ -54,10 +54,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GunInteraction.cs" />
+    <Compile Include="Assets\Scripts\ChangeColourInteractableObjects.cs" />
     <Compile Include="Assets\Scripts\RightHandControllerInputs.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
-    <Compile Include="Assets\Scripts\ChangeColourInteractableObjects.cs" />
     <Compile Include="Assets\Scripts\LeftHandControllerInputs.cs" />
+    <Compile Include="Assets\Scripts\ComponentsInteractions.cs" />
+    <Compile Include="Assets\Scripts\ComponentsMovement.cs" />
+    <Compile Include="Assets\Scripts\SliderInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
