@@ -7,7 +7,8 @@ public class ComponentsInteractions : MonoBehaviour
     [SerializeField] string componentName;
 
     [System.NonSerialized] public bool isInteracting = false;
-    public Vector3 targetPosition;
+
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -28,15 +29,18 @@ public class ComponentsInteractions : MonoBehaviour
         {
             case "Slider":
                 SliderInteraction slider = GetComponent<SliderInteraction>();
-                slider.MoveSlider(handlerPosition, 200f);
+                slider.MoveSlider(
+                    handlerPosition, 
+                    Vector3.Distance(
+                        new Vector3(0, 0, transform.localPosition.z),
+                        new Vector3(0, 0, -handlerPosition.z) * speed
+                        )
+                    );
+                Debug.Log(handlerPosition);
                 return;
             case "SafetyLock":
-                transform.localRotation = Quaternion.Euler(
-                    ComponentMovement.ComponentPosition(
-                        transform.localRotation.eulerAngles, 
-                        targetPosition, 
-                        5f)
-                    );
+                SafetyLock safetyLock = GetComponent<SafetyLock>();
+                safetyLock.ChangeSafetyPosition();
                 return;
         }
     }

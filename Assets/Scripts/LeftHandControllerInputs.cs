@@ -65,7 +65,7 @@ public class LeftHandControllerInputs : MonoBehaviour
                 if (interactableObject != null)
                 {
                     mesh.mesh = null;
-                    transform.GetChild(0).gameObject.SetActive(false);
+                    //transform.GetChild(0).gameObject.SetActive(false);
                     if (interactableObject.tag == "Components")
                     {
                         ComponentsInteractions component = interactableObject.GetComponent<ComponentsInteractions>();

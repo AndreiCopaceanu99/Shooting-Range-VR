@@ -34,7 +34,6 @@ public class GunInteraction : MonoBehaviour
     void PickUpGun()
     {
         transform.position = PickUp.PickUpObject(transform.position, position);
-        //transform.rotation = Quaternion.Euler(PickUp.PickUpObject(transform.rotation.eulerAngles, rotation));
-        transform.rotation = Quaternion.Euler(rotation + new Vector3(0f, 0f, 0f));
+        transform.rotation = Quaternion.Euler(rotation);
     }
 }

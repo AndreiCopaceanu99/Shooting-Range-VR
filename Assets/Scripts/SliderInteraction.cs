@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class SliderInteraction : ComponentsInteractions
 {
-    Vector3 startingPos;
+    Vector3 startingPosition;
+    Vector3 targetPosition;
+
+    Vector3 initialHandPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        startingPos = transform.localPosition;
+        startingPosition = transform.localPosition;
     }
 
     // Update is called once per frame
@@ -17,16 +20,14 @@ public class SliderInteraction : ComponentsInteractions
     {
         if (!isInteracting)
         {
-            /*transform.localPosition = ComponentMovement.ComponentPosition(
-                    transform.localPosition,
-                    startingPos,
-                    200f);*/
-            MoveSlider(startingPos, 200f);
+            MoveSlider(startingPosition, speed);
+            initialHandPosition = targetPosition;
         }
     }
 
     public void MoveSlider(Vector3 handlerPosition, float speed)
     {
+        targetPosition = handlerPosition;
         transform.localPosition = ComponentMovement.ComponentPosition(
                     transform.localPosition,
                     new Vector3(
