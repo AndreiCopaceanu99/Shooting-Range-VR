@@ -9,10 +9,13 @@ public class SliderInteraction : ComponentsInteractions
 
     Vector3 initialHandPosition;
 
+    float sliderZ;
+
     // Start is called before the first frame update
     void Start()
     {
         startingPosition = transform.localPosition;
+        sliderZ = startingPosition.z;
     }
 
     // Update is called once per frame
@@ -22,12 +25,16 @@ public class SliderInteraction : ComponentsInteractions
         {
             MoveSlider(startingPosition, speed);
             initialHandPosition = targetPosition;
+            //sliderZ = startingPosition.z;
         }
     }
 
     public void MoveSlider(Vector3 handlerPosition, float speed)
     {
         targetPosition = handlerPosition;
+
+        Debug.Log(Vector3.Distance(initialHandPosition, handlerPosition));
+
         transform.localPosition = ComponentMovement.ComponentPosition(
                     transform.localPosition,
                     new Vector3(

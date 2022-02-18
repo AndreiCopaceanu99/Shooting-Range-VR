@@ -23,30 +23,17 @@ public class SafetyLock : ComponentsInteractions
         {
             if(safetyOn)
             {
-                RotateSafetyLock(initialRotation, lockedRotation);
+                RotateSafetyLock(lockedRotation);
             }
             else
             {
-                RotateSafetyLock(lockedRotation, initialRotation);
+                RotateSafetyLock(initialRotation);
             }
         }
-
-        //Debug.Log(transform.localEulerAngles);
     }
 
     public void ChangeSafetyPosition()
     {
-        /*if (!safetyOn && transform.localEulerAngles.x == initialRotation.x)
-        {
-            move = true;
-            safetyOn = !safetyOn;
-        }
-        else if(safetyOn && transform.localEulerAngles.x == lockedRotation.x)
-        {
-            move = true;
-            safetyOn = !safetyOn;
-        }*/
-
         if(!move)
         {
             move = true;
@@ -54,12 +41,10 @@ public class SafetyLock : ComponentsInteractions
         }
     }
 
-    void RotateSafetyLock(Vector3 startingRotation, Vector3 targetRotation)
+    void RotateSafetyLock(Vector3 targetRotation)
     {
-        //transform.localRotation = Quaternion.Euler(ComponentMovement.ComponentPosition(startingRotation, targetRotation, 200f));
-        transform.localEulerAngles = ComponentMovement.ComponentPosition(startingRotation, targetRotation, speed);
+        transform.localEulerAngles = ComponentMovement.ComponentPosition(transform.localEulerAngles, targetRotation, speed);
 
-        //Debug.Log(transform.localEulerAngles + " " + targetRotation);
         if (transform.localEulerAngles == targetRotation)
         {
             move = false;

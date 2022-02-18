@@ -69,7 +69,7 @@ public class LeftHandControllerInputs : MonoBehaviour
                     if (interactableObject.tag == "Components")
                     {
                         ComponentsInteractions component = interactableObject.GetComponent<ComponentsInteractions>();
-                        component.Interact(transform.localPosition);
+                        component.Interact(transform.position, transform.localPosition, transform.localRotation.eulerAngles);
                     }
                 }
             }

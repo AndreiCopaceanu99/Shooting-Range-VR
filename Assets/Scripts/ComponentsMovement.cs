@@ -11,6 +11,8 @@ public static class ComponentMovement
             targetPosition, 
             Vector3.Distance(startingPosition, targetPosition) * Time.deltaTime * speed
             );*/
+        //Debug.Log(startingPosition + " " + targetPosition);
+
         Vector3 position = Vector3.Lerp(
             startingPosition,
             targetPosition,

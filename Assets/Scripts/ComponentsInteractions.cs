@@ -21,7 +21,7 @@ public class ComponentsInteractions : MonoBehaviour
 
     }
 
-    public void Interact(Vector3 handlerPosition)
+    public void Interact(Vector3 handlerPosition, Vector3 localHandlerPosition, Vector3 handlerRotation)
     {
         isInteracting = true;
 
@@ -29,18 +29,26 @@ public class ComponentsInteractions : MonoBehaviour
         {
             case "Slider":
                 SliderInteraction slider = GetComponent<SliderInteraction>();
+                float distance = Vector3.Distance(
+                        transform.localPosition,
+                        localHandlerPosition
+                        );
                 slider.MoveSlider(
-                    handlerPosition, 
-                    Vector3.Distance(
-                        new Vector3(0, 0, transform.localPosition.z),
-                        new Vector3(0, 0, -handlerPosition.z) * speed
-                        )
+                    localHandlerPosition,
+                    distance * speed / 2
                     );
-                Debug.Log(handlerPosition);
                 return;
             case "SafetyLock":
                 SafetyLock safetyLock = GetComponent<SafetyLock>();
                 safetyLock.ChangeSafetyPosition();
+                return;
+            case "MagazineCatch":
+                MagazineCatch magazineCatch = GetComponent<MagazineCatch>();
+                magazineCatch.MagazineCatchPressed();
+                return;
+            case "Magazine":
+                Magazine magazine = GetComponent<Magazine>();
+                magazine.HandValues(handlerPosition, handlerRotation);
                 return;
         }
     }
