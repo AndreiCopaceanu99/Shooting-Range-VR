@@ -62,6 +62,11 @@ public class LeftHandControllerInputs : MonoBehaviour
             bool triggerValue;
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
             {
+            }
+
+            bool gripValue;
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out gripValue) && gripValue)
+            {
                 if (interactableObject != null)
                 {
                     mesh.mesh = null;
@@ -72,13 +77,17 @@ public class LeftHandControllerInputs : MonoBehaviour
                         component.Interact(transform.position, transform.localPosition, transform.localRotation.eulerAngles);
                     }
                 }
+
             }
+
             else
             {
-                if (interactableObject != null)
+                if (interactableObject != null && interactableObject.GetComponent<ComponentsInteractions>() != null)
                 {
-                    interactableObject.GetComponent<ComponentsInteractions>().isInteracting = triggerValue;
+                    interactableObject.GetComponent<ComponentsInteractions>().isInteracting = gripValue;
                 }
+                checkObjects();
+                interactableObject = null;
             }
         }
     }
@@ -88,16 +97,20 @@ public class LeftHandControllerInputs : MonoBehaviour
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayMaxDistance, interactableObjectLayer))
-        {
+        {   
             if (interactableObject == null)
             {
-                interactableObject = hit.transform.gameObject;
+                interactableObject = hit.collider.transform.gameObject;
             }
-            if (interactableObject != hit.transform.gameObject)
+
+            if (interactableObject != hit.collider.transform.gameObject)
             {
                 changeColour(Color.white);
-                interactableObject = hit.transform.gameObject;
+                interactableObject = hit.collider.transform.gameObject;
             }
+
+            Debug.Log(interactableObject.name + " " + interactableObject.layer.ToString());
+
             changeColour(Color.yellow);
         }
         else if (interactableObject != null)

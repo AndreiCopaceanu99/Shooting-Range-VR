@@ -22,14 +22,14 @@ public class RightHandControllerInputs : MonoBehaviour
 
     private void Update()
     {
-        if (armed)
+        /*if (armed)
         {
             handleGun();
         }
         else
         {
             checkObjects();
-        }
+        }*/
     }
 
     // Update is called once per frame
@@ -70,19 +70,36 @@ public class RightHandControllerInputs : MonoBehaviour
             bool triggerValue;
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
             {
+                
+            }
+
+            bool gripValue;
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out gripValue) && gripValue)
+            {
                 if (interactableObject != null)
                 {
                     armed = true;
                     mesh.mesh = null;
                     transform.GetChild(0).gameObject.SetActive(false);
                     changeColour(Color.white);
+                    handleGun();
                 }
+            }
+
+            else
+            {
+                if (interactableObject != null)
+                {
+                    interactableObject.GetComponent<GunInteraction>().isInteracting = gripValue;
+                }
+                checkObjects();
             }
         }
     }
 
     void checkObjects()
     {
+        transform.GetChild(0).gameObject.SetActive(true);
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, rayMaxDistance, interactableObjectLayer))

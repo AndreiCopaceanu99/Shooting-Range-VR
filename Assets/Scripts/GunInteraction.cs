@@ -9,10 +9,14 @@ public class GunInteraction : MonoBehaviour
     Vector3 position;
     Vector3 rotation;
 
+    Rigidbody rb;
+
+    public bool isInteracting;
+
     // Start is called before the first frame update
     private void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -21,6 +25,13 @@ public class GunInteraction : MonoBehaviour
         if(pickedUp)
         {
             PickUpGun();
+            rb.isKinematic = true;
+        }
+
+        if (!isInteracting)
+        {
+            pickedUp = false;
+            rb.isKinematic = false;
         }
     }
 

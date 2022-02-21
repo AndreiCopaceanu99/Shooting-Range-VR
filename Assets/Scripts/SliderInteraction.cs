@@ -33,8 +33,6 @@ public class SliderInteraction : ComponentsInteractions
     {
         targetPosition = handlerPosition;
 
-        Debug.Log(Vector3.Distance(initialHandPosition, handlerPosition));
-
         transform.localPosition = ComponentMovement.ComponentPosition(
                     transform.localPosition,
                     new Vector3(

@@ -70,10 +70,10 @@ public class Magazine : ComponentsInteractions
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Gun")
+        if(other.tag == "Frame")
         {
             loaded = true;
-            transform.parent = other.transform;
+            transform.parent = other.transform.parent;
             rb.isKinematic = true;
 
             magazineCatch.magazine = gameObject.GetComponent<Magazine>();
@@ -82,7 +82,7 @@ public class Magazine : ComponentsInteractions
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Gun")
+        if (other.tag == "Frame")
         {
             loaded = false;
         }
