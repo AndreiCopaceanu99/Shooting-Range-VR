@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\LeftHandControllerInputs.cs" />
     <Compile Include="Assets\Scripts\SafetyLock.cs" />
     <Compile Include="Assets\Scripts\GunAnimation.cs" />
+    <Compile Include="Assets\Scripts\Sounds.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

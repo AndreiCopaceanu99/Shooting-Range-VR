@@ -23,7 +23,8 @@ public class GunAnimation : MonoBehaviour
 
         if(shoot)
         {
-            
+            Sounds sounds = GetComponent<Sounds>();
+            sounds.PlaySound();
         }
     }
 }
