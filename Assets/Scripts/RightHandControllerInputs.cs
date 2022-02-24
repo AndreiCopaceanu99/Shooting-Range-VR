@@ -70,7 +70,19 @@ public class RightHandControllerInputs : MonoBehaviour
             bool triggerValue;
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
             {
-                
+                if(armed)
+                {
+                    GunAnimation gunAnimation = interactableObject.GetComponent<GunAnimation>();
+                    gunAnimation.shoot = true;
+                }
+            }
+            else
+            {
+                if (armed)
+                {
+                    GunAnimation gunAnimation = interactableObject.GetComponent<GunAnimation>();
+                    gunAnimation.shoot = false;
+                }
             }
 
             bool gripValue;

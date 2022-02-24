@@ -61,9 +61,10 @@
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\ComponentsInteractions.cs" />
     <Compile Include="Assets\Scripts\MagazineCatch.cs" />
+    <Compile Include="Assets\Scripts\Magazine.cs" />
     <Compile Include="Assets\Scripts\LeftHandControllerInputs.cs" />
     <Compile Include="Assets\Scripts\SafetyLock.cs" />
-    <Compile Include="Assets\Scripts\Magazine.cs" />
+    <Compile Include="Assets\Scripts\GunAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

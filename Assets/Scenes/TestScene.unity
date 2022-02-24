@@ -1176,14 +1176,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 665972867, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1114018921, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8215405076446093115, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1228,17 +1220,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 8469091799056004657, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8739564721175446913, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_Name
       value: M1911-A1Model
-      objectReference: {fileID: 0}
-    - target: {fileID: 8739564721175446913, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
