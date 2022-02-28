@@ -6,22 +6,21 @@ public class GunAnimation : MonoBehaviour
 {
     Animator animator;
 
-    public bool shoot;
-
-    [SerializeField] GameObject shootingModel;
+    GunManager gunManager;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        gunManager = GetComponent<GunManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("shooting", shoot);
+        animator.SetBool("shooting", gunManager.shoot);
 
-        if(shoot)
+        if(gunManager.shoot)
         {
             Sounds sounds = GetComponent<Sounds>();
             sounds.PlaySound();

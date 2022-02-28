@@ -72,16 +72,16 @@ public class RightHandControllerInputs : MonoBehaviour
             {
                 if(armed)
                 {
-                    GunAnimation gunAnimation = interactableObject.GetComponent<GunAnimation>();
-                    gunAnimation.shoot = true;
+                    GunManager gunManager = interactableObject.GetComponent<GunManager>();
+                    gunManager.shoot = true;
                 }
             }
             else
             {
                 if (armed)
                 {
-                    GunAnimation gunAnimation = interactableObject.GetComponent<GunAnimation>();
-                    gunAnimation.shoot = false;
+                    GunManager gunManager = interactableObject.GetComponent<GunManager>();
+                    gunManager.shoot = false;
                 }
             }
 
