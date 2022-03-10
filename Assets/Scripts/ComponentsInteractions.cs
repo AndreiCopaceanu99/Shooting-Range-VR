@@ -29,13 +29,13 @@ public class ComponentsInteractions : MonoBehaviour
         {
             case "Slider":
                 SliderInteraction slider = GetComponent<SliderInteraction>();
-                float distance = Vector3.Distance(
+                /*float distance = Vector3.Distance(
                         transform.localPosition,
                         localHandlerPosition
-                        );
+                        );*/
                 slider.MoveSlider(
                     localHandlerPosition,
-                    distance * speed / 2
+                    speed / 2
                     );
                 return;
             case "SafetyLock":

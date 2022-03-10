@@ -9,13 +9,12 @@ public class SliderInteraction : ComponentsInteractions
 
     Vector3 initialHandPosition;
 
-    float sliderZ;
+    bool grabbed;
 
     // Start is called before the first frame update
     void Start()
     {
         startingPosition = transform.localPosition;
-        sliderZ = startingPosition.z;
     }
 
     // Update is called once per frame
@@ -23,23 +22,47 @@ public class SliderInteraction : ComponentsInteractions
     {
         if (!isInteracting)
         {
+            initialHandPosition = startingPosition;
+            grabbed = false;
             MoveSlider(startingPosition, speed);
-            initialHandPosition = targetPosition;
-            //sliderZ = startingPosition.z;
         }
     }
 
     public void MoveSlider(Vector3 handlerPosition, float speed)
     {
-        targetPosition = handlerPosition;
+       // targetPosition = handlerPosition;
+
+        if(!grabbed && isInteracting)
+        {
+            initialHandPosition = handlerPosition;
+            grabbed = true;
+        }
+
+        float distance = -Vector3.Distance(initialHandPosition, handlerPosition);
+
+        if (isInteracting)
+        {
+            targetPosition = new Vector3(
+                            transform.localPosition.x,
+                            transform.localPosition.y,
+                            distance
+                            );
+        }
+        else
+        {
+            targetPosition = startingPosition;
+        }
+        
+        Debug.Log(targetPosition.z);
+
+        targetPosition.z = Mathf.Clamp(targetPosition.z, -0.04f, 0.012f);
+        
 
         transform.localPosition = ComponentMovement.ComponentPosition(
                     transform.localPosition,
-                    new Vector3(
-                        transform.localPosition.x,
-                        transform.localPosition.y,
-                        Mathf.Clamp(-handlerPosition.z, 0.012f, -0.04f)
-                        ),
+                    targetPosition,
                     speed);
+
+        //Debug.Log(transform.localPosition.z);
     }
 }

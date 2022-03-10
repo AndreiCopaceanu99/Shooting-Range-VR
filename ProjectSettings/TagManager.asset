@@ -7,6 +7,9 @@ TagManager:
   - Gun
   - Components
   - Frame
+  - FxTemporaire
+  - Bullet
+  - Target
   layers:
   - Default
   - TransparentFX

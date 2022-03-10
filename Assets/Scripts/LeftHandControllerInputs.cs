@@ -109,7 +109,7 @@ public class LeftHandControllerInputs : MonoBehaviour
                 interactableObject = hit.collider.transform.gameObject;
             }
 
-            Debug.Log(interactableObject.name + " " + interactableObject.layer.ToString());
+            //Debug.Log(interactableObject.name + " " + interactableObject.layer.ToString());
 
             changeColour(Color.yellow);
         }

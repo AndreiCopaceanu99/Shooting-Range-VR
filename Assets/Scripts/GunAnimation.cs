@@ -12,18 +12,28 @@ public class GunAnimation : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        //animator.enabled = false;
         gunManager = GetComponent<GunManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        animator.enabled = gunManager.shoot;
         animator.SetBool("shooting", gunManager.shoot);
 
         if(gunManager.shoot)
         {
+            //animator.enabled = true;
             Sounds sounds = GetComponent<Sounds>();
             sounds.PlaySound();
         }
+        /*else
+        {
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Shooting"))
+            {
+                animator.enabled = false;
+            }
+        }*/
     }
 }
