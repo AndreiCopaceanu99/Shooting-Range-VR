@@ -13,7 +13,7 @@ public static class ComponentMovement
             );
         //Debug.Log(targetPosition);
 
-        Debug.Log(startingPosition.z + " " + targetPosition.z + " " + position.z + " " + speed);
+        //Debug.Log(startingPosition.z + " " + targetPosition.z + " " + position.z + " " + speed);
         return position;
     }
 }

@@ -151,6 +151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4348875256606412359, guid: d342aef8707991d4fa06f9118f338aa5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2084059583897332637, guid: d342aef8707991d4fa06f9118f338aa5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -304,6 +308,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4348875256606412359, guid: d342aef8707991d4fa06f9118f338aa5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2084059583897332637, guid: d342aef8707991d4fa06f9118f338aa5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1377,15 +1385,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1173972426, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306818369402329349, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: m_TagString
+      value: Slider
       objectReference: {fileID: 0}
     - target: {fileID: 5506052133634619096, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: speed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041263791300205500, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: loaded
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8215405076446093115, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_RootOrder

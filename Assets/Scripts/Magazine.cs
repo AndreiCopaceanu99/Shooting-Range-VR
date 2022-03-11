@@ -17,11 +17,15 @@ public class Magazine : ComponentsInteractions
     Vector3 rotation;
 
     MagazineCatch magazineCatch;
+    GunManager gunManager;
+
+    public int bulletsNumber;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        magazineCatch = GameObject.FindObjectOfType<MagazineCatch>();
+        magazineCatch = FindObjectOfType<MagazineCatch>();
+        gunManager = FindObjectOfType<GunManager>();
     }
 
     // Update is called once per frame
@@ -31,12 +35,19 @@ public class Magazine : ComponentsInteractions
         {
             PickUpGun();
         }
-        
-        if(magazineCatch.magazine != gameObject.GetComponent<Magazine>())
+
+        loaded = magazineCatch.magazine == gameObject.GetComponent<Magazine>();
+
+        /*if (magazineCatch.magazine != gameObject.GetComponent<Magazine>())
         {
-            loaded = false;
+            //loaded = false;
         }
         else
+        {
+            LoadedTransform();
+        }*/
+
+        if(loaded)
         {
             LoadedTransform();
         }
@@ -45,6 +56,16 @@ public class Magazine : ComponentsInteractions
         {
             pickedUp = false;
             rb.useGravity = true;
+        }
+
+        /*if(loaded && gunManager.hasShot)
+        {
+            bulletsNumber--;
+        }*/
+
+        if(loaded)
+        {
+            gunManager.hasBullets = bulletsNumber > 0;
         }
     }
 
@@ -64,15 +85,15 @@ public class Magazine : ComponentsInteractions
 
     void LoadedTransform()
     {
-            transform.localPosition = loadedPosition;
-            transform.localEulerAngles = loadedRotation;
+        transform.localPosition = loadedPosition;
+        transform.localEulerAngles = loadedRotation;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Frame")
+        if(other.tag == "Frame" && magazineCatch.magazine == null)
         {
-            loaded = true;
+            //loaded = true;
             transform.parent = other.transform.parent;
             rb.isKinematic = true;
 
@@ -84,7 +105,7 @@ public class Magazine : ComponentsInteractions
     {
         if (other.tag == "Frame")
         {
-            loaded = false;
+           // loaded = false;
         }
     }
 }

@@ -62,11 +62,6 @@ public class LeftHandControllerInputs : MonoBehaviour
             bool triggerValue;
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
             {
-            }
-
-            bool gripValue;
-            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out gripValue) && gripValue)
-            {
                 if (interactableObject != null)
                 {
                     mesh.mesh = null;
@@ -77,17 +72,40 @@ public class LeftHandControllerInputs : MonoBehaviour
                         component.Interact(transform.position, transform.localPosition, transform.localRotation.eulerAngles);
                     }
                 }
-
             }
-
             else
             {
-                if (interactableObject != null && interactableObject.GetComponent<ComponentsInteractions>() != null)
+                if (interactableObject != null && interactableObject.GetComponent<ComponentsInteractions>() != null && interactableObject.tag == "Components")
+                {
+                    interactableObject.GetComponent<ComponentsInteractions>().isInteracting = triggerValue;
+                    checkObjects();
+                    interactableObject = null;
+                }
+            }
+
+            bool gripValue;
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out gripValue) && gripValue)
+            {
+                if (interactableObject != null)
+                {
+                    mesh.mesh = null;
+                    //transform.GetChild(0).gameObject.SetActive(false);
+                    if (interactableObject.tag == "Slider" || interactableObject.tag == "Magazine")
+                    {
+                        ComponentsInteractions component = interactableObject.GetComponent<ComponentsInteractions>();
+                        component.Interact(transform.position, transform.localPosition, transform.localRotation.eulerAngles);
+                    }
+                }
+
+            }
+            else
+            {
+                if (interactableObject != null && interactableObject.GetComponent<ComponentsInteractions>() != null && (interactableObject.tag == "Slider" || interactableObject.tag == "Magazine"))
                 {
                     interactableObject.GetComponent<ComponentsInteractions>().isInteracting = gripValue;
+                    checkObjects();
+                    interactableObject = null;
                 }
-                checkObjects();
-                interactableObject = null;
             }
         }
     }

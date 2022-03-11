@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -4348875256606412359}
   m_Layer: 7
   m_Name: Magazine
-  m_TagString: Components
+  m_TagString: Magazine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +144,4 @@ MonoBehaviour:
   loaded: 0
   loadedPosition: {x: -0.001947522, y: -0.01354313, z: -0.07011175}
   loadedRotation: {x: 0, y: 180, z: 0}
+  bulletsNumber: 7

@@ -11,10 +11,13 @@ public class MagazineCatch : ComponentsInteractions
 
     public Magazine magazine;
 
+    GunManager gunManager;
+
     // Start is called before the first frame update
     void Start()
     {
         initialPosition = transform.localPosition;
+        gunManager = FindObjectOfType<GunManager>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,8 @@ public class MagazineCatch : ComponentsInteractions
         {
             MoveMagazineCatch(pressedPosition, speed);
         }
+
+        gunManager.hasMagazine = magazine != null;
     }
 
     public void MagazineCatchPressed()

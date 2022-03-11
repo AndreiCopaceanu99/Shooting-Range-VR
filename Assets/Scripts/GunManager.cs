@@ -17,7 +17,12 @@ public class GunManager : MonoBehaviour
     [SerializeField] Vector3 bulletForce;
     [SerializeField] Vector3 caseForce;
 
-    bool canShoot;
+    public bool safetyOn;
+
+    public bool hasMagazine;
+    public bool hasBullets;
+
+    public bool canShoot;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,25 +32,33 @@ public class GunManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MuzzleFlash();
+        //Debug.Log(hasBullets);
     }
 
     private void FixedUpdate()
     {
-        Shoot();
+        if (!safetyOn && hasMagazine && hasBullets)
+        {
+            Shoot();
+        }
+        else
+        {
+            MuzzleFlash(false);
+        }
     }
 
-    void MuzzleFlash()
+    void MuzzleFlash(bool hasShot)
     {
-        if (shoot)
+        /*if (shoot)
         {
             muzzleFlash.SetActive(true);
         }
-
         else
         {
             muzzleFlash.SetActive(false);
-        }
+        }*/
+
+        muzzleFlash.SetActive(hasShot);
     }
 
     void Shoot()
@@ -60,12 +73,25 @@ public class GunManager : MonoBehaviour
                 bulletRB.AddRelativeForce(transform.forward * bulletForce.z);
                 caseRB.AddRelativeForce(transform.right * caseForce.x + transform.up * caseForce.y);
 
+                TakeOutBulletCount();
+
                 canShoot = false;
+                MuzzleFlash(true);
+            }
+            else
+            {
+                MuzzleFlash(false);
             }
         }
         else
         {
             canShoot = true;
         }
+    }
+
+    void TakeOutBulletCount()
+    {
+        Magazine magazine = FindObjectOfType<MagazineCatch>().magazine;
+        magazine.bulletsNumber--;
     }
 }

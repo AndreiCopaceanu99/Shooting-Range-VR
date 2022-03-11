@@ -53,7 +53,7 @@ public class SliderInteraction : ComponentsInteractions
             targetPosition = startingPosition;
         }
         
-        Debug.Log(targetPosition.z);
+        //Debug.Log(targetPosition.z);
 
         targetPosition.z = Mathf.Clamp(targetPosition.z, -0.04f, 0.012f);
         

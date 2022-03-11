@@ -10,15 +10,19 @@ public class SafetyLock : ComponentsInteractions
     Vector3 initialRotation;
     [SerializeField] Vector3 lockedRotation;
 
+    GunManager gunManager;
+
     // Start is called before the first frame update
     void Start()
     {
         initialRotation = transform.localEulerAngles;
+        gunManager = FindObjectOfType<GunManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        gunManager.safetyOn = safetyOn;
         if (move)
         {
             if(safetyOn)
