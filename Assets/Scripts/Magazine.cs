@@ -20,6 +20,9 @@ public class Magazine : ComponentsInteractions
     GunManager gunManager;
 
     public int bulletsNumber;
+
+    [SerializeField] GameObject bulletMesh;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +69,7 @@ public class Magazine : ComponentsInteractions
         if(loaded)
         {
             gunManager.hasBullets = bulletsNumber > 0;
+            bulletMesh.SetActive(false);
         }
     }
 

@@ -13,6 +13,10 @@ public class LeftHandControllerInputs : MonoBehaviour
 
     GameObject interactableObject;
 
+    [SerializeField] GameObject magazinePrefab;
+    [SerializeField] Vector3 magazineArea;
+    [SerializeField] float magazineAreaDistance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,6 +98,14 @@ public class LeftHandControllerInputs : MonoBehaviour
                     {
                         ComponentsInteractions component = interactableObject.GetComponent<ComponentsInteractions>();
                         component.Interact(transform.position, transform.localPosition, transform.localRotation.eulerAngles);
+                    }
+
+                }
+                else
+                {
+                    if (Vector3.Distance(transform.localPosition, magazineArea) <= magazineAreaDistance)
+                    {
+                        interactableObject = Instantiate(magazinePrefab, transform.position, Quaternion.identity);
                     }
                 }
 

@@ -19,8 +19,8 @@ public class GunAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.enabled = gunManager.shoot && gunManager.canShoot && gunManager.hasBullets;
-        animator.SetBool("shooting", gunManager.shoot && gunManager.canShoot && gunManager.hasBullets);
+        animator.enabled = gunManager.shoot && gunManager.canShoot && !gunManager.safetyOn && gunManager.hasMagazine && gunManager.hasBullets;
+        animator.SetBool("shooting", gunManager.shoot);
 
         if (animator.enabled)
         {

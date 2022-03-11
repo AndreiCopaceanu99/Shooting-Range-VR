@@ -123,27 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &278706917 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8739564721175446913, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-  m_PrefabInstance: {fileID: 8469091799705329426}
-  m_PrefabAsset: {fileID: 0}
---- !u!111 &278706918
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278706917}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 5ad307b944be5094694ea6724957d555, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 5ad307b944be5094694ea6724957d555, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 1
-  m_CullingType: 0
 --- !u!1001 &414961986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,10 +287,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4348875256606412359, guid: d342aef8707991d4fa06f9118f338aa5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2084059583897332637, guid: d342aef8707991d4fa06f9118f338aa5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1077,6 +1052,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   rayMaxDistance: 100
+  magazinePrefab: {fileID: 8393339558286234541, guid: d342aef8707991d4fa06f9118f338aa5, type: 3}
+  magazineArea: {x: 0, y: 0, z: 0}
+  magazineAreaDistance: 0.7
 --- !u!1 &1189088353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,26 +1361,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1173972426, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3306818369402329349, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_TagString
-      value: Slider
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506052133634619096, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: speed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041263791300205500, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: loaded
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8215405076446093115, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1446,14 +1404,6 @@ PrefabInstance:
     - target: {fileID: 8215405076446093115, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469091799705329428, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469091799705329428, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
-      propertyPath: m_UpdateMode
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8739564721175446913, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_Name
