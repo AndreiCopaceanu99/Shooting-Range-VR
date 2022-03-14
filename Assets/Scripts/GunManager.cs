@@ -23,6 +23,9 @@ public class GunManager : MonoBehaviour
     public bool hasBullets;
 
     public bool canShoot;
+
+    public bool isClocked;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,12 +35,15 @@ public class GunManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(hasBullets);
+        if(!hasMagazine || !hasBullets)
+        {
+            isClocked = false;
+        }
     }
 
     private void FixedUpdate()
     {
-        if (!safetyOn && hasMagazine && hasBullets)
+        if (!safetyOn && hasMagazine && hasBullets && isClocked)
         {
             Shoot();
         }

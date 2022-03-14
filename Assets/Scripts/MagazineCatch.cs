@@ -11,8 +11,6 @@ public class MagazineCatch : ComponentsInteractions
 
     public Magazine magazine;
 
-    GunManager gunManager;
-
     // Start is called before the first frame update
     void Start()
     {

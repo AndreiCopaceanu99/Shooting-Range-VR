@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &248421474 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7010517421751740640, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+  m_PrefabInstance: {fileID: 8469091799705329426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &414961986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1361,6 +1366,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: maxSlider
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: minSlider
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 248421474}
+    - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: caseForce.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: caseForce.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127467251815117203, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 963759395932347707, guid: b0c224c593b27aa41a80ffd441722a65, type: 3}
     - target: {fileID: 8215405076446093115, guid: 67845f41ee9ce02479b803033cd89bfa, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -10,16 +10,7 @@ public class ComponentsInteractions : MonoBehaviour
 
     public float speed;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public GunManager gunManager;
 
     public void Interact(Vector3 handlerPosition, Vector3 localHandlerPosition, Vector3 handlerRotation)
     {

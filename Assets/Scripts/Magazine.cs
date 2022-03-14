@@ -17,7 +17,6 @@ public class Magazine : ComponentsInteractions
     Vector3 rotation;
 
     MagazineCatch magazineCatch;
-    GunManager gunManager;
 
     public int bulletsNumber;
 

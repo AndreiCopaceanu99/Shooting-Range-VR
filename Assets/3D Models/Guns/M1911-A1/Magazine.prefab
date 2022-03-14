@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Magazine
   speed: 20
+  gunManager: {fileID: 0}
   loaded: 0
   loadedPosition: {x: -0.001947522, y: -0.01354313, z: -0.07011175}
   loadedRotation: {x: 0, y: 180, z: 0}
@@ -243,7 +244,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: _45 Calibre
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3386285106202321315, guid: b0c224c593b27aa41a80ffd441722a65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3386285106202321315, guid: b0c224c593b27aa41a80ffd441722a65, type: 3}
+    - {fileID: 1443268206106849736, guid: b0c224c593b27aa41a80ffd441722a65, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b0c224c593b27aa41a80ffd441722a65, type: 3}
 --- !u!1 &3465371745138701829 stripped
 GameObject:
